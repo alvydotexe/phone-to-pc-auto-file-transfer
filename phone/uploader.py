@@ -1,6 +1,4 @@
-import os
-import time
-import requests
+import os, time, requests
 
 # Change this manually if your PC IP changes
 url = "http://192.168.0.116:5000"
@@ -58,7 +56,6 @@ def send(p):
         print("Error:", p)
         print(e)
         return False
-
 
 def scan():
     up = load()
