@@ -1,0 +1,37 @@
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual environments
+env/
+venv/
+.venv/
+
+# Uploaded files and local tracking
+uploaded.txt
+uploads/
+
+# Private/local config
+.env
+config.py
+
+# Real user files
+*.jpg
+*.jpeg
+*.png
+*.webp
+*.heic
+*.pdf
+*.doc
+*.docx
+*.txt
+
+# Editor files
+.vscode/
+.idea/
+
+# OS files
+.DS_Store
+Thumbs.db
