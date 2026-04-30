@@ -1,0 +1,13 @@
+[Unit]
+Description=Phone File Upload Flask Server
+After=network.target
+
+[Service]
+User=alvy
+WorkingDirectory=/home/alvy/phone-to-pc-auto-file-transfer/server
+ExecStart=/usr/bin/python app.py
+Restart=always
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target
