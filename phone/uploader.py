@@ -3,16 +3,16 @@ import os, time, requests
 # Change this manually if your PC IP changes
 url = "http://192.168.0.116:5000"
 
-# Termux shared storage folders
+# termux shared file
 fs = [
     "/data/data/com.termux/files/home/storage/shared/Pictures",
     "/data/data/com.termux/files/home/storage/shared/Documents",
 ]
 
-# File that stores already uploaded file paths
+# uploaded file (egulo ignore korbe)
 uf = "uploaded.txt"
 
-# Supported file types
+
 ext = (
     ".jpg", ".jpeg", ".png", ".webp", ".heic",
     ".pdf", ".doc", ".docx", ".txt"
