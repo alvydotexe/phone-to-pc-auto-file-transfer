@@ -130,65 +130,11 @@ The PC IP address can change when:
 - The PC connects to another Wi-Fi network
 - The router assigns a new local IP address
 
-Because of this, the server URL may need to be updated manually inside the phone uploader script.
+Because of this, the server URL may need to be updated manually inside the wifi settings so that your pc ip address will be always be the same when you connect you home wifi.
 
-## 1. Find the PC IP Address
 
-On the PC, run:
-
-```bash
-hostname -I
-```
-
-or:
-
-```bash
-ip addr
-```
-
-Look for an IP address like:
-
-```text
-192.168.0.xxx
-```
-
-Example:
-
-```text
-192.168.0.116
-```
-
-## 2. Update the Server URL in Termux
-
-Open the phone uploader script in Termux:
-
-```bash
-nano uploader.py
-```
-
-Update this line:
-
-```python
-SERVER_URL = "http://YOUR_PC_IP:5000"
-```
-
-Example:
-
-```python
-SERVER_URL = "http://192.168.0.116:5000"
-```
-
-## 3. Restart the Phone Uploader Script
-
-After changing the IP address, stop the old script and run it again:
-
-```bash
-python uploader.py
-```
-
-If the script starts automatically with Termux:Boot, restart the phone or manually restart the script from Termux.
-
-## 4. Quick Check
+## 1
+. Quick Check
 
 If files are not uploading, check these first:
 
