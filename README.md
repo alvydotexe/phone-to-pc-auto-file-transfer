@@ -1,6 +1,6 @@
 # Phone to PC Auto File Transfer
 
-A local Wi-Fi based automation project that automatically transfers new photos, screenshots, and downloaded files from an Android phone to a PC.
+A local Wi-Fi based automation project that automatically transfers new photos,documents and downloaded files from an Android phone to a PC.
 
 The phone runs a Python script through Termux. The script detects new files, checks whether they were already uploaded, and sends them to a Flask server running on the PC. The PC receives the files and saves them directly to a selected storage folder such as an HDD.
 
