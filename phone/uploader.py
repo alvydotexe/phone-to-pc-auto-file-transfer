@@ -1,6 +1,5 @@
 import os, time, requests
 
-# Change this manually if your PC IP changes
 url = "http://192.168.0.116:5000"
 
 # termux shared file
